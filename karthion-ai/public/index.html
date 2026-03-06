@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karthion AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="🤖 Karthion AI.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Markdown library -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h3>💬 Chats</h3>
+
+<!-- Search -->
+
+<input
+id="chatSearch"
+placeholder="Search chats..."
+oninput="searchChats()"
+class="chat-search"
+/>
+
+<!-- New Chat Button -->
+
+<button onclick="createNewChat()" class="new-chat">
++ New Chat
+</button>
+
+<!-- Chat History -->
+
+<div id="historyList"></div>
+
+</div>
+
+
+<!-- Main App -->
+
+<div class="app">
+
+<!-- Header -->
+
+<header class="topbar">
+
+<h2 class="ai-title">
+<img src="🤖 Karthion AI.png" class="ai-logo">
+<span>Karthion AI</span>
+</h2>
+
+<span class="status">● Online</span>
+
+</header>
+
+
+<!-- Chat Messages -->
+
+<div class="chat-container">
+
+<div id="messages" class="messages"></div>
+
+</div>
+
+
+<!-- Input Area -->
+
+<div class="input-area">
+
+<input id="input" placeholder="Ask anything..." />
+
+<button onclick="sendMessage()">Send</button>
+
+<button onclick="startVoice()" class="voice-btn">🎤</button>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<p>© 2026 Karthion AI</p>
+
+<p class="developer">
+Developed by 
+<img src="logo.png" class="dev-logo">
+<strong>Karthikeyan G</strong>
+</p>
+
+</footer>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
